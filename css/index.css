@@ -1,0 +1,110 @@
+.border{
+    border-bottom : 4px solid saddlebrown;
+    margin-left : -10px;
+    margin-right : -8px;
+}
+
+.icon{
+    font-size : 30px;
+    margin-bottom : -20px;
+    margin-top : -20px;
+}
+
+.cuprins{
+    font-size : 20px;
+    margin-left : 15%;
+    margin-top : -53px;
+    word-spacing: 25px;
+}
+
+.img1 {
+    border : 3px solid gray;
+    float : left;
+    margin-top : 20px;
+    width : 60%;
+    height : 600px;
+    background-image : url("../img/img1.jpg");
+    background-size : 100% 600px;
+}
+
+.txt1{
+    border : 2px solid black;
+    position : absolute;
+    top : 50%;
+    left : 250px;
+    font-size : 50px;
+}
+
+.link1{
+    border: 3px solid black;
+    position : absolute;
+    top : 65%;
+    left : 335px;
+    font-size : 20px;
+    color : gray;
+    color : darkgray;
+}
+
+.img2{
+    border : 3px solid gray;
+    margin-top : 5px;
+    float : right;
+    background-image : url("../img/img2.jpg");
+    background-size : 105%;
+    width : 39%;
+    height : 330px;
+    display : inline;
+    background-repeat: no-repeat;
+}
+.txt2{
+    border : 2px solid black;
+    position : absolute;
+    top : 25%;
+    left : 1100px;
+    font-size : 40px;
+}
+
+.link2{
+    border: 3px solid black;
+    position : absolute;
+    top : 37%;
+    left : 1200px;
+    font-size : 20px;
+    color : saddlebrown;
+}
+
+.img3{
+    border : 3px solid gray;
+    margin-top : 5px;
+    float : right;
+    background-image : url("../img/img3.jpg");
+    background-size : 100%;
+    width : 39%;
+    height : 280px;
+    display : inline;
+}
+.txt3{
+    border : 2px solid black;
+    position : absolute;
+    top : 65%;
+    left : 1110px;
+    font-size : 40px;
+}
+
+.link3{
+    border: 3px solid black;
+    position : absolute;
+    top : 77%;
+    left : 1220px;
+    font-size : 20px;
+    color : saddlebrown;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    background-color: transparent;
+    color : darkred;
+}

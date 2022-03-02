@@ -1,0 +1,68 @@
+body{
+    background-image: url("../img/background-general.png");
+}
+
+.border{
+    border-bottom : 4px solid saddlebrown;
+    margin-left : -10px;
+    margin-right : -8px;
+    background-color: white;
+}
+
+.icon{
+    font-size : 30px;
+    margin-bottom : -20px;
+    margin-top : -20px;
+}
+
+.cuprins{
+    font-size : 20px;
+    margin-left : 15%;
+    margin-top : -53px;
+    word-spacing: 25px;
+}
+
+.part1{
+    border:  5px solid darkslategray;
+    margin-right: 51%;
+    font-size : 20px;
+    margin-top : 10px;
+    background-color: whitesmoke;
+}
+
+.img1{
+    float : left;
+}
+
+.txt1{
+    font-size : 15px;
+    text-align : center;
+}
+
+.part2{
+    border : 5px solid darkslategray;
+    margin-left : 51%;
+    font-size : 20px;
+    margin-top : -650px;
+    float : right;
+    background-color: whitesmoke;
+}
+
+.img2{
+    float: left;
+}
+
+.txt2{
+    font-size : 15px;
+    margin-bottom : -20px;
+    text-align : center;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    background-color: transparent;
+    color : darkred;
+}

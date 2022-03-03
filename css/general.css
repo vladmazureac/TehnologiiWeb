@@ -1,64 +1,87 @@
 body{
-    background-image: url("../img/background-general.png");
+    background-color : black;
 }
 
-.border{
+.bordercuprins{
     border-bottom : 4px solid saddlebrown;
-    margin-left : -10px;
-    margin-right : -8px;
-    background-color: white;
-}
-
-.icon{
     font-size : 30px;
-    margin-bottom : -20px;
-    margin-top : -20px;
+    background-color : white;
+    border-radius : 10px;
 }
 
 .cuprins{
+    display : inline;
     font-size : 20px;
-    margin-left : 15%;
-    margin-top : -53px;
-    word-spacing: 25px;
+    word-spacing : 25px;
+    margin-left : 40px;
 }
 
-.bordertext{
-    border : 5px solid saddlebrown;
-    border-radius : 10px;
-    margin-left : 260px;
-    margin-right : 260px;
-    margin-top : 50px;
+.icon{
+    margin-left : 10px;
+    display : inline;
+}
+.wikipedia{
+    display : inline;
     font-size : 20px;
-    background-color: whitesmoke;
-}
-
-.img1 {
-    float: left;
-}
-
-.txt1{
-    text-align: center;
-    font-size : 15px;
-    margin-bottom : -20px;
-    margin-top : -10px;
-}
-
-.img2 {
-    float: right;
-}
-
-.txt2{
-    text-align: center;
-    font-size : 15px;
-    margin-bottom : -30px;
-    margin-top : -10px;
+    float : right;
+    margin-top : 15px;
 }
 
 a{
     text-decoration: none;
+    color : saddlebrown;
 }
 
-a:visited{
-    background-color: transparent;
-    color : darkred;
+.imgborder{
+    border : 4px solid lightgray;
+    border-radius : 10px;
+    float : left;
+    background-color : white;
+    margin-top : 10px;
+    margin-left : 30px;
+}
+
+.img1{
+    text-align : center;
+    font-size : 18px;
+    font-style : italic;
+}
+
+.bord1{
+    border-bottom : 1px solid black;
+    text-align : center;
+}
+
+.punct{
+    text-align : center;
+    font-size : 17px;
+}
+
+.bord2 {
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.textul{
+    border-top : 3px solid grey;
+    border-bottom : 3px solid grey;
+    margin-top : 15px;
+    margin-left : 30%;
+    margin-right : 30%;
+    background-color: white;
+    padding-left : 0.5em;
+    padding-right : 0.5em;
+    font-size : 18px;
+}
+
+.compar{
+    border : 4px solid lightgray;
+    border-radius : 10px;
+    background-color : white;
+    float : right;
+    margin-right : 30px;
+    margin-top : 10px;
+    text-align : center;
+    font-size : 18px;
+    display : block;
 }

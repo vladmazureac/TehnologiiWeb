@@ -1,0 +1,47 @@
+body{
+    background-color : black;
+}
+
+.bordercuprins{
+    border-bottom : 4px solid saddlebrown;
+    font-size : 30px;
+    background-color : white;
+    border-radius : 10px;
+}
+
+.cuprins{
+    display : inline;
+    font-size : 20px;
+    word-spacing : 25px;
+    margin-left : 40px;
+}
+
+.icon{
+    margin-left : 10px;
+    display : inline;
+}
+.wikipedia{
+    display : inline;
+    font-size : 20px;
+    float : right;
+    margin-top : 15px;
+}
+
+a{
+    text-decoration: none;
+    color : saddlebrown;
+}
+
+.text{
+    border : 3px solid gray;
+    margin-top : 20px;
+    margin-left : 25%;
+    margin-right : 25%;
+    padding : 1.0em;
+    background-color : white;
+    font-size : 17px;
+}
+
+h2{
+    text-align: center;
+}

@@ -95,7 +95,7 @@ a{
     float : right;
     display : block;
     background-image: url("../img/img3.jpg");
-    background-size: cover;
+    background-size: 100%;
     margin-top : 10px;
     text-align: center;
 }

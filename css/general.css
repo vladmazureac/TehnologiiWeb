@@ -20,11 +20,20 @@ body{
     margin-left : 10px;
     display : inline;
 }
+
+.icon img{
+    width : 60px;
+}
+
 .wikipedia{
     display : inline;
     font-size : 20px;
     float : right;
     margin-top : 15px;
+}
+
+.wikipedia img{
+    width : 20px;
 }
 
 a{
@@ -45,6 +54,10 @@ a{
     text-align : center;
     font-size : 18px;
     font-style : italic;
+}
+
+.img1 img{
+    width : 230px;
 }
 
 .bord1{
@@ -84,4 +97,8 @@ a{
     text-align : center;
     font-size : 18px;
     display : block;
+}
+
+.compar img{
+    width : 234px;
 }

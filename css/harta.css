@@ -20,11 +20,20 @@ body{
     margin-left : 10px;
     display : inline;
 }
+
+.icon img{
+    width : 60px;
+}
+
 .wikipedia{
     display : inline;
     font-size : 20px;
     float : right;
     margin-top : 15px;
+}
+
+.wikipedia img{
+    width : 20px;
 }
 
 a{
@@ -36,6 +45,11 @@ a{
     margin-top : 5px;
     border : 1px solid lightgray;
     float : left;
+}
+
+.harta img{
+    width : 1000px;
+    height : 640px;
 }
 
 .tabel{

@@ -1,125 +1,135 @@
 body{
-    background-color : black;
+    background-color : #252424;
+    transition: ease 1s;
 }
 
-.bordercuprins{
-    border-bottom : 4px solid saddlebrown;
-    font-size : 30px;
-    background-color : white;
-    border-radius : 10px;
-}
-
-.cuprins{
-    display : inline;
-    font-size : 20px;
-    word-spacing : 25px;
-    margin-left : 40px;
-}
-
-.icon{
-    margin-left : 10px;
-    display : inline;
-}
-
-.icon img{
-    width : 60px;
-}
-
-.wikipedia{
-    display : inline;
-    font-size : 20px;
-    float : right;
-    margin-top : 15px;
-}
-
-.wikipedia img{
-    width : 20px;
-}
-
-a{
-    text-decoration: none;
-    color : saddlebrown;
-}
-
-.img1{
-    border : 3px solid darkgray;
-    width : 60%;
-    height : 616px;
+.menu img{
+    width : 73px;
     float : left;
-    display : block;
-    background-image: url("../img/everest-home2.jpg");
-    background-repeat: round;
-    margin-top : 10px;
-    text-align : center;
+    margin-left : 10px;
+    margin-right : 10px;
 }
 
-.txt1{
-    margin-top : 170px;
-    font-size : 40px;
-    border : 3px solid;
-    margin-left : 30%;
-    margin-right : 30%;
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: ease 1s;
 }
 
-.link1{
+.menu li {
+    float: left;
+    font-size : 21px;
+}
+
+.menu li a {
+    display: block;
+    color: black;
     text-align: center;
-    font-size : 20px;
-    border : 3px solid black;
-    background-color: moccasin;
-    border-radius: 4px;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: ease 1s;
 }
 
+.menu li a:hover:not(.active) {
+    background-color: #7b54a4;
+}
 
-.img2{
-    border : 3px solid darkgray;
-    width : 38%;
-    height : 300px;
-    float : right;
-    display : block;
-    background-image: url("../img/everest-home-recorduri.jpg");
-    background-size: cover;
+.cuprins img{
+    box-shadow: 5px 5px 5px #7b54a4;
+}
+
+.cuprins figure img {
+    transition: .3s ease-in-out;
+}
+.cuprins figure:hover img {
+    transform: scale(0.9);
+    opacity: 0.3;
+}
+
+.img1 img{
     margin-top : 10px;
-    text-align : center;
+    width : 60%;
+    height : 600px;
+    float : left;
 }
 
-.txt2{
-    border : 3px solid;
-    margin-top : 100px;
-    font-size : 35px;
-    margin-left : 20%;
-    margin-right : 20%;
-}
-
-.link2{
-    font-size : 20px;
-    border : 3px solid black;
-    border-radius : 4px;
-    background-color: moccasin;
-}
-
-.img3{
-    border : 3px solid darkgray;
-    width : 38%;
-    height : 300px;
-    float : right;
-    display : block;
-    background-image: url("../img/everest-harta-home.jpg");
-    background-size: 100%;
-    margin-top : 10px;
+.img1 .middle1{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 29%;
+    transform: translate(-30%, -50%);
+    -ms-transform: translate(-30%, -50%);
     text-align: center;
 }
 
-.txt3{
-    border : 3px solid;
-    margin-top : 100px;
-    font-size : 35px;
-    margin-left : 20%;
-    margin-right : 20%;
+.img1:hover .middle1{
+    opacity: 1;
 }
 
-.link3{
-    font-size : 20px;
-    border-radius : 4px;
-    border : 3px solid black;
-    background-color: moccasin;
+.text1{
+    color: white;
+    font-size: 28px;
+    padding: 16px 32px;
+}
+
+.img2 img{
+    margin-top : 10px;
+    width : 38%;
+    float : right;
+    display : inline;
+}
+
+.img2 .middle2{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 35%;
+    right: 12%;
+    transform: translate(-30%, -50%);
+    -ms-transform: translate(-30%, -50%);
+    text-align: center;
+}
+
+.img2:hover .middle2{
+    opacity: 1;
+}
+
+.text2{
+    color: white;
+    font-size: 28px;
+    padding: 16px 32px;
+}
+
+.img3 img{
+    margin-top : 10px;
+    width : 38%;
+    height : 283px;
+    float : right;
+    display : inline;
+}
+
+.img3 .middle3{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 76%;
+    right: 14%;
+    transform: translate(-30%, -50%);
+    -ms-transform: translate(-30%, -50%);
+    text-align: center;
+}
+
+.img3:hover .middle3{
+    opacity: 1;
+}
+
+.text3{
+    color: white;
+    font-size: 28px;
+    padding: 16px 32px;
 }

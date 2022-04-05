@@ -1,46 +1,41 @@
 body{
-    background-color : black;
+    background-color : #252424;
+    transition: ease 1s;
 }
 
-.bordercuprins{
-    border-bottom : 4px solid saddlebrown;
-    font-size : 30px;
-    background-color : white;
-    border-radius : 10px;
-}
-
-.cuprins{
-    display : inline;
-    font-size : 20px;
-    word-spacing : 25px;
-    margin-left : 40px;
-}
-
-.icon{
+.menu img{
+    width : 73px;
+    float : left;
     margin-left : 10px;
-    display : inline;
+    margin-right : 10px;
 }
 
-.icon img{
-    width : 60px;
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    transition: ease 1s;
 }
 
-.wikipedia{
-    display : inline;
-    font-size : 20px;
-    float : right;
-    margin-top : 15px;
+.menu li {
+    float: left;
+    font-size : 21px;
 }
 
-.wikipedia img{
-    width : 20px;
-}
-
-a{
+.menu li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    color : saddlebrown;
+    transition: ease 1s;
 }
 
+.menu li a:hover:not(.active) {
+    background-color: #7b54a4;
+}
 .imgborder{
     border : 4px solid lightgray;
     border-radius : 10px;
@@ -48,6 +43,7 @@ a{
     background-color : white;
     margin-top : 10px;
     margin-left : 30px;
+    transition: ease 1s;
 }
 
 .img1{
@@ -85,6 +81,7 @@ a{
     padding-left : 0.5em;
     padding-right : 0.5em;
     font-size : 18px;
+    transition: ease 1s;
 }
 
 .compar{
@@ -97,6 +94,7 @@ a{
     text-align : center;
     font-size : 18px;
     display : block;
+    transition: ease 1s;
 }
 
 .compar img{

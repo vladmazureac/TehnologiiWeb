@@ -5,47 +5,59 @@
     <title>Everest</title>
     <link rel="shortcut icon" href="../img/icon-index.jpg"/>
     <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" href="../css/darkmode.css" type="text/css">
+    <script src="../js/darkmode.js"></script>
 </head>
 <body>
-    <div class="bordercuprins">
-        <div class="icon">
-        <img src="../img/cuprins-index.png" alt="" />
-            </div>
-        <b>Everest</b>
-        <div class="cuprins">
-            <a href="index.html">Home</a>
-            <a href="general.html">General</a>
-            <a href="recorduri.html">Recorduri</a>
-            <a href="harta.html">Harta</a>
+<div class="menu">
+    <ul>
+        <img src="../img/index-menu.png" alt=""  id="icon" >
+        <li><a href="index.html">Home</a></li>
+        <li><a href="general.html">General</a></li>
+        <li><a href="recorduri.html">Recorduri</a></li>
+        <li><a href="harta.html">Harta</a></li>
+        <div class="darkmodebutton">
+            <input type="checkbox" class="button" id="btn" onclick="darkmode()"/>
+            <label class="label" for="btn">
+                <img src="../img/moon.png" alt="">
+                <img src="../img/sun.png" alt="">
+                <div class="ball"></div>
+            </label>
         </div>
-        <div class="wikipedia">
-            <img src="../img/icon-wikipedia.png" alt="">
-            <a href="https://ro.wikipedia.org/wiki/Everest" target="_blank">Wikipedia</a>
-        </div>
+    </ul>
+</div>
+
+<div class="cuprins">
+    <div class="img1">
+        <figure>
+            <a href="general.html">
+                    <img src="../img/everest-home.jpg" alt=""/>
+                <div class="middle1">
+                    <div class="text1">Informație generală</div>
+                </div>
+            </a>
+        </figure>
     </div>
-<div class="img1">
-    <p class="txt1">
-        <b>Muntele Everest</b>
-    </p>
-    <a class="link1" href="general.html">
-        <b>Informații generale</b>
-    </a>
-</div>
     <div class="img2">
-    <p class="txt2">
-        <b>Recordurile de aplinism</b>
-    </p>
-    <a class="link2" href="recorduri.html">
-        <b>Recorduri</b>
-    </a>
-</div>
-<div class="img3">
-    <p class="txt3">
-        <b>Harta Everestului</b>
-    </p>
-    <a class="link3" href="harta.html">
-          <b>Redare</b>
-    </a>
+        <figure>
+            <a href="recorduri.html">
+            <img src="../img/everest-recorduri.jpg" alt="" />
+            <div class="middle2">
+                <div class="text2">Recorduri</div>
+            </div>
+            </a>
+        </figure>
+    </div>
+    <div class="img3">
+        <figure>
+            <a href="harta.html">
+                <img src="../img/everest-harta-home.jpg" alt="" />
+                <div class="middle3">
+                    <div class="text3">Harta</div>
+                </div>
+            </a>
+        </figure>
+    </div>
 </div>
 </body>
 </html>

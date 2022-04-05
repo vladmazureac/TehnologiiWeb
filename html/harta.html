@@ -5,23 +5,24 @@
     <title>Harta</title>
     <link rel="shortcut icon" href="../img/icon-index.jpg">
     <link rel="stylesheet" href="../css/harta.css" type="text/css">
+    <link rel="stylesheet" href="../css/darkmode.css" type="text/css">
+    <script src="../js/darkmode.js"></script>
 </head>
 <body>
-<div class="bordercuprins">
-    <div class="icon">
-        <img src="../img/cuprins-index.png" alt="">
-    </div>
-    <b>Everest</b>
-    <div class="cuprins">
-        <a href="index.html">Home</a>
-        <a href="general.html">General</a>
-        <a href="recorduri.html">Recorduri</a>
-        <a href="harta.html">Harta</a>
-    </div>
-    <div class="wikipedia">
-        <img src="../img/icon-wikipedia.png" alt="">
-        <a href="https://ro.wikipedia.org/wiki/Everest" target="_blank">Wikipedia</a>
-    </div>
+<div class="menu">
+    <ul>
+        <img src="../img/index-menu.png" alt=""  >
+        <li><a href="index.html">Home</a></li>
+        <li><a href="general.html">General</a></li>
+        <li><a href="recorduri.html">Recorduri</a></li>
+        <li><a href="harta.html">Harta</a></li>
+        <div class="darkmodebutton">
+            <input type="checkbox" class="button" id="btn" onclick="darkmode()"/>
+            <label class="label" for="btn">
+                <div class="ball"></div>
+            </label>
+        </div>
+    </ul>
 </div>
 <div class="harta">
     <img src="../img/img3.jpg" alt="" usemap="#everest">

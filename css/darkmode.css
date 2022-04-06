@@ -39,12 +39,6 @@
     transition: ease 1s;
 }
 
-.label img{
-    width : 30px;
-    display : inline;
-    float : left;
-}
-
 .button:checked + .label .ball {
     transform: translateX(24px);
 }
@@ -72,16 +66,15 @@
 }
     /**/
     /*general*/
-.dark-mode .textul, .dark-mode .imgborder, .dark-mode .compar{
-    color : white;
-    background-color: #252424;
+.dark-mode .p1, .dark-mode .p2, .dark-mode .p3, .dark-mode h1{
+    color : #252424;
     transition: ease 1s;
 }
     /**/
     /*index*/
 .dark-mode .text1, .dark-mode .text2, .dark-mode .text3{
     color : black;
-    transition: ease 1s;
+    transition: ease 0.5s;
 }
     /**/
 

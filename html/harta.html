@@ -24,8 +24,8 @@
         </div>
     </ul>
 </div>
-<div class="harta">
-    <img src="../img/img3.jpg" alt="" usemap="#everest">
+<div class="harta" onmouseover="showtxt()" onmouseout="hidetxt()">
+    <img src="../img/harta-img.jpg" alt="" usemap="#everest">
     <map name="everest">
         <area shape="rect" coords="450,120,500,180" alt="" href="../img/img1.jpg" target="_blank">
         <area shape="rect" coords="630,150,670,180" alt="" href="../img/img_harta/Lhotse.jpg" target="_blank">
@@ -46,79 +46,22 @@
         <area shape="rect" coords="670,10,720,35" alt="" href="../img/img_harta/Makalu.jpg" target="_blank">
     </map>
 </div>
+<div class="msgshow">
+    <p id="msg">Click pe un vârf care doriți</p>
+    <p id="msgtext">Vârfurile din apropiere includ Lhotse , 8.516 m (27.940 ft); Nuptse , 7.855 m (25.771 ft) și Changtse , 7.580 m (24.870 ft), printre altele. Un alt vârf din apropiere este Khumbutse , iar mulți dintre cei mai înalți munți din lume se află lângă Muntele Everest. Pe latura de sud-vest, o caracteristică majoră în zonele inferioare este cascada de gheață și ghețarul Khumbu , un obstacol pentru alpiniștii de pe acele rute, dar și pentru taberele de bază.
 
-<div class="tabel">
-    <table>
-        <h3><i>Vârfurile Everestului</i></h3>
-        <tr>
-            <th>Denumirea</th>
-            <th>Înâlțimea</th>
-        </tr>
-        <tr>
-            <td>Chomolungma</td>
-            <td>8848</td>
-        </tr>
-        <tr>
-            <td>Lhotse</td>
-            <td>8516</td>
-        </tr>
-        <tr>
-            <td>South Col</td>
-            <td>7906</td>
-        </tr>
-        <tr>
-            <td>Nuptse</td>
-            <td>7861</td>
-        </tr>
-        <tr>
-            <td>Bei Peak</td>
-            <td>7543</td>
-        </tr>
-        <tr>
-            <td>Pumori</td>
-            <td>7161</td>
-        </tr>
-        <tr>
-            <td>Bei'ao</td>
-            <td>7020</td>
-        </tr>
-        <tr>
-            <td>Lingtren</td>
-            <td>6749</td>
-        </tr>
-        <tr>
-            <td>Cho Polu</td>
-            <td>6735</td>
-        </tr>
-        <tr>
-            <td>Khumbutse</td>
-            <td>6636</td>
-        </tr>
-        <tr>
-            <td>Rabu La</td>
-            <td>6548</td>
-        </tr>
-        <tr>
-            <td>Guangming Peak</td>
-            <td>6533</td>
-        </tr>
-        <tr>
-            <td>Lho La</td>
-            <td>6006</td>
-        </tr>
-        <tr>
-        <td>Mehra</td>
-            <td>5817</td>
-        </tr>
-        <tr>
-            <td>Kala Pattar</td>
-            <td>5645</td>
-        </tr>
-        <tr>
-            <td>Gorakshep</td>
-            <td>5164</td>
-        </tr>
-    </table>
+    </p>
 </div>
+
+<script>
+    function showtxt(){
+        document.getElementById("msg").style.opacity = 1;
+        document.getElementById("msgtext").style.opacity = 1;
+    }
+    function hidetxt(){
+        document.getElementById("msg").style.opacity = 0;
+        document.getElementById("msgtext").style.opacity = 0;
+    }
+</script>
 </body>
 </html>

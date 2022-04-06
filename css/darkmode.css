@@ -59,16 +59,16 @@
 }
     /**/
     /*harta*/
-.dark-mode .tabel{
-    background-color: #252424;
-    color : white;
+.dark-mode .msgshow #msgtext{
+    color : #252424;
     transition: ease 1s;
+    text-shadow : 1px 1px 1px dimgray;
 }
     /**/
     /*general*/
 .dark-mode .p1, .dark-mode .p2, .dark-mode .p3, .dark-mode h1{
     color : #252424;
-    transition: ease 1s;
+    transition : ease 1s;
 }
     /**/
     /*index*/

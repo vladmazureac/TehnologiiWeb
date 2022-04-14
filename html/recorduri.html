@@ -6,10 +6,8 @@
     <link rel="shortcun icon" href="../img/icon-index.jpg"/>
     <link rel="stylesheet" href="../css/recorduri.css" type="text/css">
     <link rel="stylesheet" href="../css/darkmode.css" type="text/css">
-    <script src="../js/darkmode.js"></script>
-    <script src="../js/recorduri.js"></script>
 </head>
-<body>
+<body onload="onload()">
 <div class="menu">
     <ul>
         <img src="../img/index-menu.png" alt="" id="icon">
@@ -19,7 +17,7 @@
         <li><a href="harta.html">Harta</a></li>
         <div class="darkmodebutton">
             <input type="checkbox" class="button" id="btn" onclick="darkmode()"/>
-            <label class="label" for="btn">
+            <label class="label" for="btn" id="button">
                 <div class="ball"></div>
             </label>
         </div>
@@ -60,5 +58,7 @@
                 <li><a href="#"><b>2021 : </b></a>Kami Rita Sherpa ajunge la 25 de ascensiuni până la vârf.</li>
             </ul>
     </div>
+<script src="../js/darkmode.js"></script>
+<script src="../js/recorduri.js"></script>
 </body>
 </html>

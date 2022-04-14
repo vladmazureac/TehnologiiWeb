@@ -6,10 +6,8 @@
     <link rel="shorcun icon" href="../img/icon-index.jpg"/>
     <link rel="stylesheet" href="../css/general.css" type="text/css">
     <link rel="stylesheet" href="../css/darkmode.css" type="text/css">
-    <script src="../js/darkmode.js"></script>
-    <script src="../js/general.js"></script>
 </head>
-<body>
+<body onload="onload()">
 <div class="menu">
     <ul>
         <img src="../img/index-menu.png" alt="" id="icon" >
@@ -38,7 +36,7 @@
             limba engleză, Everest, a fost dat în onoarea topografului britanic Sir George Everest.</p>
         <button class="showbutton" id="show" onclick="showtext()"><span>Show More</span></button>
     </div>
-    <div class="p2">
+    <div class="p2" id="p2">
         <p>Muntele Everest atrage mulți alpiniști, inclusiv alpinisti cu experiență. Există două trasee principale de
             alpinism, unul care se apropie de vârf dinspre sud-estul Nepalului (cunoscut sub numele de „ruta standard”)
             și celălalt dinspre nord, în Tibet. Deși nu prezintă provocări tehnice substanțiale de alpinism pe traseul
@@ -50,7 +48,7 @@
             în 1921 a atins 7.000 m (22.970 ft) pe North Col , expediția din 1922 a împins traseul creastă nordică până
             la 8.320 m (27.300 ft), marcând prima dată când un om a urcat peste 8.000m.</p>
     </div>
-    <div class="p3">
+    <div class="p3" id="p3">
         <p> Expediția din 1924 a dus la unul dintre cele mai mari
             mistere de pe Everest până astăzi: George Mallory și Andrew Irvineau făcut o ultimă încercare la summit pe
             8 iunie, dar nu s-au întors niciodată, stârnind dezbateri dacă au fost primii care au ajuns în vârf. Tenzing
@@ -60,5 +58,7 @@
             raportată a vârfului de pe creasta de nord la 25 mai 1960.</p>
     </div>
 </div>
+<script src="../js/darkmode.js"></script>
+<script src="../js/general.js"></script>
 </body>
 </html>

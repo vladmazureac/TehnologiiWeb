@@ -1,16 +1,16 @@
 function searchbar(){
-    var input, filter, ul, li, a, i, txtValue;
+    let input, filter, ul, listofli, a, i, txtValue;
     input = document.getElementById("input");
-    filter = input.value.toUpperCase();
+    filter = input.value;
     ul = document.getElementById("search");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
+    listofli = ul.getElementsByTagName("li");
+    for (i = 0; i < listofli.length; i++) {
+        a = listofli[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent;
+        if (txtValue.includes(filter)) {
+            listofli[i].style.display = "";
         } else {
-            li[i].style.display = "none";
+            listofli[i].style.display = "none";
         }
     }
 }

@@ -1,12 +1,15 @@
 function darkmode(){
-    let body = document.body;
-    body.classList.toggle("dark-mode");
+    const wasDarkmode = localStorage.getItem('darkmode') === 'true';
+    localStorage.setItem('darkmode', !wasDarkmode);
 
-    let image = document.getElementById('icon');
-    if (image.src.match("../img/index-menu.png")) {
-        image.src = "../img/index-menu-dark.png";
-    }
-    else {
-        image.src = "../img/index-menu.png";
-    }
+    let body = document.body;
+    body.classList.toggle('dark-mode', !wasDarkmode);
+
 }
+
+function onload() {
+    document.body.classList.toggle('dark-mode', localStorage.getItem('darkmode') === 'true');
+    if(localStorage.getItem("darkmode") != 'true')
+        document.getElementById("btn").setAttribute("checked", "");
+}
+

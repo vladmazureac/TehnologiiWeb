@@ -98,11 +98,17 @@ body{
     width : 150%;
     padding: 12px 20px;
     margin: 8px 0;
-    display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     transition: ease 1s;
+}
+
+.nume #errorNume{
+    font-size : 15px;
+    color : red;
+    float : left;
+    margin-top : 2px;
 }
 
 .posta{
@@ -132,14 +138,23 @@ body{
     transition: ease 1s;
 }
 
+.posta #errorPosta{
+    font-size : 15px;
+    color : red;
+    float : left;
+    margin-top : 2px;
+}
+
 .help{
     font-size : 20px;
     font-family : "Fira Sans",Helvetica,Arial,sans-serif;
     color : white;
     margin-left : 15px;
     float : left;
-    margin-top : 50px;
+    margin-top : 30px;
     transition: ease 1s;
+    margin-right : 70%;
+    position : relative;
 }
 
 .help .subhelp{
@@ -148,14 +163,36 @@ body{
     transition: ease 1s;
 }
 
-.help input, select {
+.help input{
     width : 276%;
     padding: 12px 20px 120px;
     margin: 8px 0;
-    display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     transition: ease 1s;
+}
+
+.help #errorHelp{
+    font-size : 15px;
+    color : #ff5959;
+    float : left;
+    margin-top : 2px;
+}
+
+.submit{
+    margin-right : 70%;
+    margin-left : 15px;
+    margin-top : 10px;
+    background-color: #7b54a4;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: #6c438f;
 }
 

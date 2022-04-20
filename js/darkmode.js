@@ -9,7 +9,7 @@ function darkmode(){
 
 function onload() {
     document.body.classList.toggle('dark-mode', localStorage.getItem('darkmode') === 'true');
-    if(localStorage.getItem("darkmode") != 'true')
+    if(localStorage.getItem("darkmode") !== 'true')
         document.getElementById("btn").setAttribute("checked", "");
 }
 

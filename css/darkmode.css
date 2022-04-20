@@ -87,4 +87,18 @@
     background-color: black;
     transition: ease 1s;
 }
+/*Support*/
+.dark-mode .nume, .dark-mode .posta, .dark-mode .help{
+    color : #252424;
+    transition: ease 1s;
+}
 
+.dark-mode .nume .subnume, .dark-mode .posta .subposta, .dark-mode .help .subhelp{
+    color : #4d4d4d;
+    transition: ease 1s;
+}
+
+.dark-mode .nume input, .dark-mode .posta input, .dark-mode .help input{
+    background-color: #252424;
+    transition: ease 1s;
+}

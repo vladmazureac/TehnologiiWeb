@@ -10,6 +10,11 @@ body{
     margin-right : 10px;
 }
 
+.menu .sprtIcon {
+    width : 30px;
+    float : right;
+}
+
 .menu ul {
     list-style-type: none;
     margin: 0;

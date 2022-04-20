@@ -1,0 +1,161 @@
+body{
+    background-color : #252424;
+    transition: ease 1s;
+}
+
+.menu img{
+    width : 73px;
+    float : left;
+    margin-left : 10px;
+    margin-right : 10px;
+}
+
+.menu .sprtIcon {
+    width : 30px;
+    float : right;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    transition: ease 1s;
+}
+
+.menu li {
+    float: left;
+    font-size : 21px;
+}
+
+.menu li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: ease 1s;
+}
+
+.menu li a:hover:not(.active) {
+    background-color: #7b54a4;
+}
+
+.showbutton {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #7b54a4;
+    text-align: center;
+    font-size: 28px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.showbutton span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+.showbutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.showbutton:hover span {
+    padding-right: 25px;
+}
+
+.showbutton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.nume{
+    font-size : 20px;
+    font-family : "Fira Sans",Helvetica,Arial,sans-serif;
+    color : white;
+    margin-left : 15px;
+    margin-top : 8%;
+    float : left;
+    transition: ease 1s;
+}
+
+.nume .subnume{
+    font-size : 15px;
+    color : gray;
+    transition: ease 1s;
+}
+
+.nume input, select {
+    width : 150%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: ease 1s;
+}
+
+.posta{
+    font-size : 20px;
+    font-family : "Fira Sans",Helvetica,Arial,sans-serif;
+    color : white;
+    margin-right : 40%;
+    margin-top : 8%;
+    float : right;
+    transition: ease 1s;
+}
+
+.posta .subposta{
+    font-size: 15px;
+    color : gray;
+    transition: ease 1s;
+}
+
+.posta input, select {
+    width : 150%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: ease 1s;
+}
+
+.help{
+    font-size : 20px;
+    font-family : "Fira Sans",Helvetica,Arial,sans-serif;
+    color : white;
+    margin-left : 15px;
+    float : left;
+    margin-top : 50px;
+    transition: ease 1s;
+}
+
+.help .subhelp{
+    font-size: 15px;
+    color : gray;
+    transition: ease 1s;
+}
+
+.help input, select {
+    width : 276%;
+    padding: 12px 20px 120px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: ease 1s;
+}
+

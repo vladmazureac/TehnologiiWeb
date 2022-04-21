@@ -1,16 +1,39 @@
 <?php
+$nameErr = $mailErr = $helpErr = $succes = "";
+$nume = $posta = $help = "";
+$saved = false;
+
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $nume=$_POST['nume'];
         $posta=$_POST['posta'];
         $help=$_POST['help'];
         $fp = fopen('support.txt', 'a');
-        fprintf($fp,"----------------------------------\n");
-        fprintf($fp,"Numele : %s\n", $nume);
-        fprintf($fp,"mail : %s\n", $posta);
-        fprintf($fp,"Problema : %s\n", $help);
-        fclose($fp);
-    }
+        if(empty($nume)){
+            $nameErr = "* Introdu numele,prenumele";
+        }
+        if(empty($posta)){
+            $mailErr = "* Introdu poșta electronică";
+        }
+        if(empty($help)){
+            $helpErr = "* Introdu informația pentru a vă putea ajuta";
+        }
+        if(empty($nameErr) && empty($mailErr) && empty($helpErr)){
+            fprintf($fp,"----------------------------------\n");
+            fprintf($fp,"Numele : %s\n", $nume);
+            fprintf($fp,"mail : %s\n", $posta);
+            fprintf($fp,"Problema : %s\n", $help);
+            $nume = $posta = $help = "";
+            $saved = true;
+        }
+            fclose($fp);
 
+        if($saved){
+            $succes = "* Datele introduse sau transmis cu succes";
+        }else{
+            $succes = "* Datele nu au fost transmise";
+        }
+
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,25 +65,25 @@
     <div class="nume">
         <label>Care este numele dumnevoastră?</label><br>
         <label class="subnume">Este o plăcere să te cunosc...</label><br>
-        <input type="text" name="nume" id="name" placeholder="Numele,prenumele..."><br>
-        <p id="errorNume"></p>
+        <input type="text" name="nume" id="name" placeholder="Numele,prenumele..." value="<?=$nume?>"><br>
+        <span> <?php echo $nameErr;?></span>
     </div>
 
     <div class="posta">
         <label>Care este poșta dumnevoastră?</label><br>
         <label class="subposta">Hai să păstrăm legătura...</label><br>
-        <input type="email" name="posta" id="posta" placeholder="name123@mail.ru"><br>
-        <p id="errorPosta"></p>
+        <input type="email" name="posta" id="posta" placeholder="name123@mail.ru" value="<?=$posta?>"><br>
+        <span> <?php echo $mailErr;?></span>
     </div>
     <div class="help">
         <label>Cu ce te putem ajuta?</label><br>
         <label class="subhelp">Așteptăm cu nerăbdare să avem o discuție interesantă...</label><br>
-        <input type="text" name="help" id="help" autocomplete="off" placeholder="Introdu textul..."><br>
-        <p id="errorHelp"></p>
+        <input type="text" name="help" id="help" autocomplete="off" placeholder="Introdu textul..." value="<?=$help?>"><br>
+        <span> <?php echo $helpErr;?></span>
     </div>
         <input type="submit" value="Expediază" class="submit" id="submit" onclick="succesmsg()">
+        <p class="<?= $saved ? "succes":"error"?>"> <?php echo $succes;?></p>
 </form>
 <script src="js/darkmode.js"></script>
-<script src="js/support.js"></script>
 </body>
 </html>

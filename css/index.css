@@ -3,6 +3,7 @@ body{
     transition: ease 1s;
 }
 
+
 .menu img{
     width : 73px;
     float : left;
@@ -10,12 +11,17 @@ body{
     margin-right : 10px;
 }
 
+.menu .sprtIcon img{
+    width : 30px;
+    float : right;
+}
+
 .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: white;
     transition: ease 1s;
 }
 
@@ -35,6 +41,42 @@ body{
 
 .menu li a:hover:not(.active) {
     background-color: #7b54a4;
+}
+
+.showbutton {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #7b54a4;
+    text-align: center;
+    font-size: 28px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.showbutton span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+.showbutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.showbutton:hover span {
+    padding-right: 25px;
+}
+
+.showbutton:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 .cuprins img{

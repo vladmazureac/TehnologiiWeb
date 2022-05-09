@@ -30,7 +30,7 @@ $saved = false;
     <meta charset="UTF-8">
     <title>Support</title>
     <link rel="stylesheet" href="css/darkmode.css" type="text/css">
-    <link rel="stylesheet" href="css/spp.css" type="text/css">
+    <link rel="stylesheet" href="css/support.css" type="text/css">
     <link rel="shorcun icon" href="img/support_icon.png"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>

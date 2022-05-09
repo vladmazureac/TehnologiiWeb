@@ -8,15 +8,6 @@ $saved = false;
         $posta=$_POST['posta'];
         $help=$_POST['help'];
         $fp = fopen('support.txt', 'a');
-        if(empty($nume)){
-            $nameErr = "* Introdu numele,prenumele";
-        }
-        if(empty($posta)){
-            $mailErr = "* Introdu poșta electronică";
-        }
-        if(empty($help)){
-            $helpErr = "* Introdu informația pentru a vă putea ajuta";
-        }
         if(empty($nameErr) && empty($mailErr) && empty($helpErr)){
             fprintf($fp,"----------------------------------\n");
             fprintf($fp,"Numele : %s\n", $nume);
@@ -29,8 +20,6 @@ $saved = false;
 
         if($saved){
             $succes = "* Datele introduse sau transmis cu succes";
-        }else{
-            $succes = "* Datele nu au fost transmise";
         }
 
     }
@@ -41,8 +30,11 @@ $saved = false;
     <meta charset="UTF-8">
     <title>Support</title>
     <link rel="stylesheet" href="css/darkmode.css" type="text/css">
-    <link rel="stylesheet" href="css/support.css" type="text/css">
+    <link rel="stylesheet" href="css/spp.css" type="text/css">
     <link rel="shorcun icon" href="img/support_icon.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="js/spp.js"></script>
 </head>
 <body onload="onload()">
 <div class="menu">
@@ -66,24 +58,22 @@ $saved = false;
         <label>Care este numele dumnevoastră?</label><br>
         <label class="subnume">Este o plăcere să te cunosc...</label><br>
         <input type="text" name="nume" id="name" placeholder="Numele,prenumele..." value="<?=$nume?>"><br>
-        <span> <?php echo $nameErr;?></span>
     </div>
-
     <div class="posta">
         <label>Care este poșta dumnevoastră?</label><br>
         <label class="subposta">Hai să păstrăm legătura...</label><br>
         <input type="email" name="posta" id="posta" placeholder="name123@mail.ru" value="<?=$posta?>"><br>
-        <span> <?php echo $mailErr;?></span>
     </div>
     <div class="help">
         <label>Cu ce te putem ajuta?</label><br>
         <label class="subhelp">Așteptăm cu nerăbdare să avem o discuție interesantă...</label><br>
         <input type="text" name="help" id="help" autocomplete="off" placeholder="Introdu textul..." value="<?=$help?>"><br>
-        <span> <?php echo $helpErr;?></span>
     </div>
-        <input type="submit" value="Expediază" class="submit" id="submit" onclick="succesmsg()">
+
+    <input type="submit" value="Expediază" class="submit" id="submit">
         <p class="<?= $saved ? "succes":"error"?>"> <?php echo $succes;?></p>
 </form>
+
 <script src="js/darkmode.js"></script>
 </body>
 </html>

@@ -78,92 +78,9 @@ body{
     right: 0;
 }
 
-.nume{
-    font-size : 20px;
-    font-family : "Fira Sans",Helvetica,Arial,sans-serif;
-    color : white;
-    margin-left : 15px;
-    margin-top : 8%;
-    float : left;
-    transition: ease 1s;
-}
-
-.nume .subnume{
-    font-size : 15px;
-    color : gray;
-    transition: ease 1s;
-}
-
-.nume input, select {
-    width : 150%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    transition: ease 1s;
-}
-
-.posta{
-    font-size : 20px;
-    font-family : "Fira Sans",Helvetica,Arial,sans-serif;
-    color : white;
-    margin-right : 40%;
-    margin-top : 8%;
-    float : right;
-    transition: ease 1s;
-}
-
-.posta .subposta{
-    font-size: 15px;
-    color : gray;
-    transition: ease 1s;
-}
-
-.posta input, select {
-    width : 150%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    transition: ease 1s;
-}
-
-
-.help{
-    font-size : 20px;
-    font-family : "Fira Sans",Helvetica,Arial,sans-serif;
-    color : white;
-    margin-left : 15px;
-    float : left;
-    margin-top : 30px;
-    transition: ease 1s;
-    margin-right : 70%;
-    position : relative;
-}
-
-.help .subhelp{
-    font-size: 15px;
-    color : gray;
-    transition: ease 1s;
-}
-
-.help input{
-    width : 276%;
-    padding: 12px 20px 120px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    transition: ease 1s;
-}
-
-
 .submit{
     margin-right : 70%;
-    margin-left : 15px;
+    margin-left : 10px;
     margin-top : 10px;
     background-color: #7b54a4;
     color: white;
@@ -182,7 +99,7 @@ span{
     color : red;
 }
 
-.succes, .error{
+.succes{
     color : #3ab63a;
     font-size : 18px;
     font-family : "Fira Sans",Helvetica,Arial,sans-serif;
@@ -193,6 +110,57 @@ span{
     border : 1px black;
 }
 
-.error{
+.posta .error, .nume .error, .help .error{
     color : red;
+}
+
+.nume{
+    margin-top : 80px;
+    margin-left : 10px;
+    width : 30%;
+    display : inline-block;
+}
+
+.nume input, .posta input{
+    width : 100%;
+    padding: 12px 20px;
+    margin-top : 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+.nume , .posta  , .help label{
+    font-size : 20px;
+    font-family : "Fira Sans",Helvetica,Arial,sans-serif;
+    color : white;
+}
+
+.nume .subnume , .posta .subposta , .help .subhelp{
+    font-size : 18px;
+    color : #9b9b9b;
+}
+
+.posta{
+    width : 30%;
+    margin-left : 150px;
+    margin-top : 80px;
+    position : absolute;
+    display : inline-block;
+}
+
+.help{
+    margin-left : 10px;
+    margin-top : 15px;
+    width : 1072px;
+}
+
+.help input{
+    width : 100%;
+    padding: 12px 20px 140px;
+    margin-top : 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }

@@ -1,0 +1,148 @@
+body{
+    background-color : #252424;
+    transition: ease 1s;
+}
+
+
+.menu img{
+    width : 73px;
+    float : left;
+    margin-left : 10px;
+    margin-right : 10px;
+}
+
+.menu .sprtIcon{
+    width : 30px;
+    float : right;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    transition: ease 1s;
+}
+
+.menu li {
+    float: left;
+    font-size : 21px;
+}
+
+.menu li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: ease 1s;
+}
+
+.menu li a:hover:not(.active) {
+    background-color: #7b54a4;
+}
+
+.showbutton {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #7b54a4;
+    text-align: center;
+    font-size: 28px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.showbutton span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+.showbutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.showbutton:hover span {
+    padding-right: 25px;
+}
+
+.login{
+    float : right;
+}
+
+.register{
+    float : right;
+}
+
+.showbutton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+.loggin{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.1);
+    padding: 50px 35px;
+}
+
+.loggin *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+.loggin h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+.username , .password{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#username , #password{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+.submit {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #7b54a4;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}

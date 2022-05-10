@@ -74,6 +74,10 @@ body{
     padding-right: 25px;
 }
 
+.login{
+    float : right;
+}
+
 .showbutton:hover span:after {
     opacity: 1;
     right: 0;

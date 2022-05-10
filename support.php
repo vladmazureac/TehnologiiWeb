@@ -1,5 +1,5 @@
 <?php
-$nameErr = $mailErr = $helpErr = $succes = "";
+$succes = "";
 $nume = $posta = $help = "";
 $saved = false;
 
@@ -8,15 +8,15 @@ $saved = false;
         $posta=$_POST['posta'];
         $help=$_POST['help'];
         $fp = fopen('support.txt', 'a');
-        if(empty($nameErr) && empty($mailErr) && empty($helpErr)){
-            fprintf($fp,"----------------------------------\n");
-            fprintf($fp,"Numele : %s\n", $nume);
-            fprintf($fp,"mail : %s\n", $posta);
-            fprintf($fp,"Problema : %s\n", $help);
-            $nume = $posta = $help = "";
-            $saved = true;
-        }
-            fclose($fp);
+
+        fprintf($fp,"----------------------------------\n");
+        fprintf($fp,"Numele : %s\n", $nume);
+        fprintf($fp,"mail : %s\n", $posta);
+        fprintf($fp,"Problema : %s\n", $help);
+
+        $saved = true;
+
+        fclose($fp);
 
         if($saved){
             $succes = "* Datele introduse sau transmis cu succes";
@@ -71,7 +71,7 @@ $saved = false;
     </div>
 
     <input type="submit" value="Expediază" class="submit" id="submit">
-        <p class="<?= $saved ? "succes":"error"?>"> <?php echo $succes;?></p>
+        <p class="succes"> <?php echo $succes;?></p>
 </form>
 
 <script src="js/darkmode.js"></script>

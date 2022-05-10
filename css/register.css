@@ -93,11 +93,11 @@ body{
     background-color: rgba(255,255,255,0.13);
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 53%;
+    top: 54%;
     left: 50%;
     border-radius: 10px;
     border: 2px solid rgba(255,255,255,0.1);
-    padding: 5px 35px;
+    padding: 0 35px;
 }
 
 .registter *{
@@ -135,7 +135,7 @@ body{
 
 
 .submit {
-    margin-top: 50px;
+    margin-top: 40px;
     width: 100%;
     background-color: #7b54a4;
     color: #080710;
@@ -144,4 +144,20 @@ body{
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.loginC{
+    font-size : 14px;
+    margin-top : 3px;
+}
+
+.loginC a{
+    color : #7b54a4;
+}
+
+.succes{
+    color : #3ab63a;
+    font-size : 16px;
+    font-family : "Fira Sans",Helvetica,Arial,sans-serif;
+    position: fixed;
 }

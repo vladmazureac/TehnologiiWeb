@@ -102,3 +102,9 @@
     background-color: #252424;
     transition: ease 1s;
 }
+/*Log In*/
+
+.dark-mode .loggin{
+    background-color: #FFFFFF21;
+    transition: ease 1s;
+}

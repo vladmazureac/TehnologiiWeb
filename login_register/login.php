@@ -64,6 +64,7 @@ if(isset($_POST['Submit'])){
     <input type="password" name="Password" placeholder="Password" id="password">
 
     <button name="Submit" class="submit">Log In</button>
+    <p class="registerC">Nu ai un cont? <a href="register.php">Register</a></p>
 </form>
 <script src="../js/darkmode.js"></script>
 </body>

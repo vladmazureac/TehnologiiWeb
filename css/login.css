@@ -146,3 +146,12 @@ body{
     border-radius: 5px;
     cursor: pointer;
 }
+
+.registerC{
+    font-size : 14px;
+    margin-top : 3px;
+}
+
+.registerC a{
+    color : #7b54a4;
+}

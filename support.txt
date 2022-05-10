@@ -6,3 +6,15 @@ Problema : asdasd
 Numele : Vlad Mazureac
 mail : mazureac2000@mail.ru
 Problema : asdasd
+----------------------------------
+Numele : Vlad Mazureac
+mail : mazureac2000@mail.ru
+Problema : afasd
+----------------------------------
+Numele : Vlad Mazureac
+mail : mazureac2000@mail.ru
+Problema : asdas
+----------------------------------
+Numele : Vlad Mazureac
+mail : mazureac2000@mail.ru
+Problema : dasd

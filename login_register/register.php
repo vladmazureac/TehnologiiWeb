@@ -1,27 +1,22 @@
 <?php
-$username = $email = $password = $passwordA = $succes = "";
-$saved = false;
+$username = $email = $password = $passwordRepeat = $succes = "";
 
     if($_SERVER["REQUEST_METHOD"] == "POST") {
         $username = $_POST['Username'];
         $email = $_POST['email'];
         $password = $_POST['Password'];
-        $passwordA = $_POST['PasswordA'];
+        $passwordRepeat = $_POST['PasswordRepeat'];
 
         $fp = fopen('register.txt', 'a');
-
-            fprintf($fp, "----------------------------------\n");
-            fprintf($fp, "Username : %s\n", $username);
-            fprintf($fp, "email : %s\n", $email);
-            fprintf($fp, "Password : %s\n", $password);
-            $username = $email = $password = "";
-            $saved = true;
+        fprintf($fp, "----------------------------------\n");
+        fprintf($fp, "Username : %s\n", $username);
+        fprintf($fp, "email : %s\n", $email);
+        fprintf($fp, "Password : %s\n", $password);
+        $username = $email = $password = "";
 
         fclose($fp);
 
-        if($saved){
-            $succes = "* Vați înregistrat cu succes";
-        }
+        $succes = "* Vați înregistrat cu succes";
 
     }
 ?>
@@ -31,6 +26,9 @@ $saved = false;
     <meta charset="UTF-8">
     <title>Everest</title>
     <link rel="shortcut icon" href="../img/login-icon.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="../js/register.js"></script>
     <link rel="stylesheet" href="../css/register.css" type="text/css">
     <link rel="stylesheet" href="../css/darkmode.css" type="text/css">
 </head>
@@ -71,11 +69,11 @@ $saved = false;
     <label for="password" class="password">Password</label>
     <input type="password" name="Password" placeholder="Password" id="password" value="<?php $password?>">
     <label for="password" class="password">Password Again</label>
-    <input type="password" name="PasswordA" placeholder="Password" id="password" value="<?php $passwordA?>">
+    <input type="password" name="PasswordRepeat" placeholder="Password" id="passwordRepeat" value="<?php $passwordRepeat?>">
 
-    <p class="succes"> <?php echo $succes;?></p>
     <button name="Submit" class="submit">Register</button>
     <p class="loginC">Ai deja un cont? <a href="login.php">Log In</a></p>
+    <p class="succes"> <?php echo $succes;?></p><br>
 </form>
 <script src="../js/darkmode.js"></script>
 </body>

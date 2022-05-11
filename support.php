@@ -1,7 +1,6 @@
 <?php
 $succes = "";
 $nume = $posta = $help = "";
-$saved = false;
 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $nume=$_POST['nume'];
@@ -14,13 +13,10 @@ $saved = false;
         fprintf($fp,"mail : %s\n", $posta);
         fprintf($fp,"Problema : %s\n", $help);
 
-        $saved = true;
-
         fclose($fp);
 
-        if($saved){
-            $succes = "* Datele introduse sau transmis cu succes";
-        }
+        $succes = "* Datele introduse sau transmis cu succes";
+
 
     }
 ?>
@@ -34,7 +30,7 @@ $saved = false;
     <link rel="shorcun icon" href="img/support_icon.png"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-    <script src="js/spp.js"></script>
+    <script src="js/support.js"></script>
 </head>
 <body onload="onload()">
 <div class="menu">
@@ -44,12 +40,18 @@ $saved = false;
         <li><a href="general.html">General</a></li>
         <li><a href="recorduri.html">Recorduri</a></li>
         <li><a href="harta.html">Harta</a></li>
-        <li><a href="support.php">Support<img src="img/support_icon.png" alt="" class="sprtIcon"></a></li>
+        <li><a href="support.php">Support<img src="../img/support_icon.png" alt="" class="sprtIcon"></a></li>
         <div class="darkmodebutton">
             <input type="checkbox" class="button" id="btn" onclick="darkmode()"/>
             <label class="label" for="btn">
                 <div class="ball"></div>
             </label>
+        </div>
+        <div class="login" >
+            <li><a href="login_register/login.php">Log In</a></li>
+        </div>
+        <div class="register" >
+            <li><a href="login_register/register.php">Register</a></li>
         </div>
     </ul>
 </div>

@@ -78,6 +78,10 @@ body{
     float : right;
 }
 
+.register{
+    float : right;
+}
+
 .showbutton:hover span:after {
     opacity: 1;
     right: 0;

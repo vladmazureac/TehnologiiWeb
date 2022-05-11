@@ -18,3 +18,7 @@ Problema : asdas
 Numele : Vlad Mazureac
 mail : mazureac2000@mail.ru
 Problema : dasd
+----------------------------------
+Numele : Vlad Mazureac
+mail : mazureac2000@mail.ru
+Problema : adsa

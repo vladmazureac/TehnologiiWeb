@@ -110,32 +110,33 @@ body{
 .registter h3{
     font-size: 32px;
     font-weight: 500;
-    line-height: 42px;
+    margin-bottom : 10px;
+    line-height: 20px;
     text-align: center;
 }
 
 .username , .password, .email{
     display: block;
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: 16px;
     font-weight: 500;
 }
 
-#username , #password, #email{
+#username , #password, #email, #passwordRepeat{
     display: block;
     height: 50px;
     width: 100%;
     background-color: rgba(255,255,255,0.07);
     border-radius: 3px;
     padding: 0 10px;
-    margin-top: 8px;
+    margin-top: 10px;
     font-size: 14px;
     font-weight: 300;
 }
 
 
 .submit {
-    margin-top: 40px;
+    margin-top: 20px;
     width: 100%;
     background-color: #7b54a4;
     color: #080710;
@@ -159,5 +160,9 @@ body{
     color : #3ab63a;
     font-size : 16px;
     font-family : "Fira Sans",Helvetica,Arial,sans-serif;
-    position: fixed;
+}
+
+.error{
+    font-size : 17px;
+    color : red;
 }

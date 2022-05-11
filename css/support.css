@@ -11,7 +11,7 @@ body{
     margin-right : 10px;
 }
 
-.menu .sprtIcon {
+.menu .sprtIcon{
     width : 30px;
     float : right;
 }
@@ -72,6 +72,14 @@ body{
 
 .showbutton:hover span {
     padding-right: 25px;
+}
+
+.login{
+    float : right;
+}
+
+.register{
+    float : right;
 }
 
 .showbutton:hover span:after {

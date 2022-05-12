@@ -88,7 +88,6 @@ body{
 }
 
 .submit{
-    margin-right : 70%;
     margin-left : 10px;
     margin-top : 10px;
     background-color: #7b54a4;
@@ -171,4 +170,13 @@ span{
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+.form-loading {
+    color: #fff;
+    display: none!important;
+}
+
+.form-loading.active {
+    display: inline-block!important;
 }

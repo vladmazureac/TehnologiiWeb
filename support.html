@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Support</title>
+    <link rel="stylesheet" href="css/darkmode.css" type="text/css">
+    <link rel="stylesheet" href="css/support.css" type="text/css">
+    <link rel="shorcun icon" href="img/support_icon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="js/support.js"></script>
+</head>
+<body onload="onload()">
+<div class="menu">
+    <ul>
+        <img src="img/index-menu.png" alt="" id="icon" >
+        <li><a href="index.html">Home</a></li>
+        <li><a href="general.html">General</a></li>
+        <li><a href="recorduri.html">Recorduri</a></li>
+        <li><a href="harta.html">Harta</a></li>
+        <li><a href="support.html">Support<img src="../img/support_icon.png" alt="" class="sprtIcon"></a></li>
+        <div class="darkmodebutton">
+            <input type="checkbox" class="button" id="btn" onclick="darkmode()"/>
+            <label class="label" for="btn">
+                <div class="ball"></div>
+            </label>
+        </div>
+        <div class="login" >
+            <li><a href="login_register/login.php">Log In</a></li>
+        </div>
+        <div class="register" >
+            <li><a href="login_register/register.php">Register</a></li>
+        </div>
+    </ul>
+</div>
+<form name="support" id="support">
+    <div class="nume">
+        <label>Care este numele dumnevoastră?</label><br>
+        <label class="subnume">Este o plăcere să te cunosc...</label><br>
+        <input type="text" name="nume" id="name" placeholder="Numele,prenumele..." ><br>
+    </div>
+    <div class="posta">
+        <label>Care este poșta dumnevoastră?</label><br>
+        <label class="subposta">Hai să păstrăm legătura...</label><br>
+        <input type="text" name="posta" id="posta" placeholder="name123@mail.ru" ><br>
+    </div>
+    <div class="help">
+        <label>Cu ce te putem ajuta?</label><br>
+        <label class="subhelp">Așteptăm cu nerăbdare să avem o discuție interesantă...</label><br>
+        <input type="text" name="help" id="help" autocomplete="off" placeholder="Introdu textul..."><br>
+    </div>
+
+    <input type="submit" value="Expediază" class="submit" id="submit">
+    <i class="form-loading fa-solid fa-spinner fa-spin"></i>
+        <p class="succes"></p>
+</form>
+
+<script src="js/darkmode.js"></script>
+</body>
+</html>

@@ -35,7 +35,7 @@ if(isset($_POST['Submit'])){
         <li><a href="../general.html">General</a></li>
         <li><a href="../recorduri.html">Recorduri</a></li>
         <li><a href="../harta.html">Harta</a></li>
-        <li><a href="../support.php">Support<img src="../img/support_icon.png" alt="" class="sprtIcon"></a></li>
+        <li><a href="../support.html">Support<img src="../img/support_icon.png" alt="" class="sprtIcon"></a></li>
         <div class="darkmodebutton">
             <input type="checkbox" class="button" id="btn" onclick="darkmode()"/>
             <label class="label" for="btn">

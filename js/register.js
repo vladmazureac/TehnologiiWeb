@@ -1,4 +1,5 @@
 $(function(){
+    $(".submit").click(() => $(".succes").text(""));
     $("form[name='register_form']").validate({
         rules: {
             Username: "required",
@@ -23,11 +24,18 @@ $(function(){
         },
         submitHandler: function(form){
             $.ajax({
-                url: form.action,
-                type: form.method,
+                url: "register.php",
+                type: "POST",
                 data: $(form).serialize(),
                 success: function(response) {
-                    $('#answers').html(response);
+                    let rs = JSON.parse(response);
+                    if(rs.succes) {
+                        $(".succes").text(rs.data);
+                        $("input[type=text],input[type=password], textarea").val("");
+                    }
+                    else {
+                        $(".succes").text("A aparut o eroare la rularea scriptului");
+                    }
                 }
             });
         }

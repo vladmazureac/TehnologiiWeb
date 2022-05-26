@@ -89,7 +89,7 @@ body{
 
 
 .loggin{
-    height: 520px;
+    height: 580px;
     width: 400px;
     background-color: rgba(255,255,255,0.13);
     position: absolute;
@@ -111,7 +111,7 @@ body{
 .loggin h3{
     font-size: 32px;
     font-weight: 500;
-    line-height: 42px;
+    line-height: 30px;
     text-align: center;
 }
 
@@ -154,4 +154,14 @@ body{
 
 .registerC a{
     color : #7b54a4;
+}
+
+.succes{
+    color : green;
+    font-size : 17px;
+}
+
+.error{
+    color : red;
+    font-size : 17px;
 }
